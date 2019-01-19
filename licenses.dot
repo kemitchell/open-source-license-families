@@ -1,0 +1,49 @@
+digraph {
+  rankdir=LR;
+  "IPL-1.0" -> "CPL-1.0";
+  "CPL-1.0" -> "EPL-1.0";
+  "EPL-1.0" -> "EPL-2.0";
+
+  "MPL-1.0" -> "MPL-1.1";
+  "MPL-1.1" -> "MPL-2.0";
+  "MPL-1.1" -> "CDDL-1.0";
+  "CDDL-1.0" -> "CDDL-1.1";
+
+  "Apache-1.0" -> "Apache-2.0";
+  "ECL-1.0" -> "ECL-2.0";
+  "Apache-2.0" -> "ECL-2.0";
+  "Apache-2.0" -> "BSD-2-Clause-Patent";
+
+  "MIT" -> "ISC";
+
+  "BSD-4-Clause" -> "BSD-3-Clause" -> "BSD-2-Clause";
+  "BSD-2-Clause" -> "BSD-2-Clause-Patent";
+  "BSD-3-Clause" -> "Sleepycat";
+  "BSD-2-Clause" -> "0BSD";
+
+  "OSL-3.0" -> "NPOSL-3.0";
+  "AFL-1.0" -> "AFL-1.1" -> "AFL-1.2" -> "AFL-2.0" -> "AFL-2.1" -> "AFL-3.0";
+
+  "AFL-1.0" -> "OSL-1.0";
+  "AFL-1.1" -> "OSL-1.1";
+  "AFL-2.0" -> "OSL-2.0";
+  "AFL-2.1" -> "OSL-2.1";
+  "AFL-3.0" -> "OSL-3.0";
+
+  "OSL-1.0" -> "OSL-1.1" -> "OSL-2.0" -> "OSL-2.1" -> "OSL-3.0";
+
+  "Artistic-1.0" -> "Artistic-2.0";
+
+  "GPL-1.0" -> "GPL-2.0" -> "GPL-3.0";
+
+  "GPL-2.0" -> "AGPL-1.0";
+  "GPL-2.0" -> "LGPL-2.0";
+  "GPL-3.0" -> "AGPL-3.0";
+  "GPL-3.0" -> "LGPL-3.0";
+
+  "AGPL-1.0" -> "AGPL-2.0" -> "AGPL-3.0";
+
+  "LGPL-2.0" -> "LGPL-2.1" -> "LGPL-3.0";
+
+  "RPL-1.1" -> "RPL-1.5";
+}
